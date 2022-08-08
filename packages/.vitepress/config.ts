@@ -43,6 +43,7 @@ const DefaultSideBar = [
 const FunctionsSideBar = getFunctionsSideBar()
 
 export default defineConfig({
+  base: 'vueuse-cn',
   title: 'VueUse',
   description: 'Collection of essential Vue Composition Utilities',
   lang: 'en-US',
