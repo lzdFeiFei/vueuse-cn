@@ -8,7 +8,7 @@ const Guide = [
   { text: '配置', link: '/guide/config' },
   { text: '组件', link: '/guide/components' },
   { text: '贡献', link: '/contributing' },
-  { text: '指南', link: '/guidelines' },
+  { text: '指导方针', link: '/guidelines' },
 ]
 
 const CoreCategories = coreCategoryNames.map(c => ({
@@ -27,17 +27,17 @@ const AddonCategories = [
 ]
 
 const Links = [
-  { text: 'Add-ons', link: '/add-ons' },
-  { text: 'Ecosystem', link: '/ecosystem' },
-  { text: 'Export Size', link: '/export-size' },
-  { text: 'Recent Updated', link: '/recent-updated' },
+  { text: '附加组件', link: '/add-ons' },
+  { text: '生态系统', link: '/ecosystem' },
+  { text: '本包体积', link: '/export-size' },
+  { text: '最近更新', link: '/recent-updated' },
 ]
 
 const DefaultSideBar = [
-  { text: 'Guide', items: Guide },
-  { text: 'Core Functions', items: CoreCategories },
-  { text: 'Add-ons', items: AddonCategories },
-  { text: 'Links', items: Links },
+  { text: '指南', items: Guide },
+  { text: '核心函数', items: CoreCategories },
+  { text: '附加组件', items: AddonCategories },
+  { text: '链接', items: Links },
 ]
 
 const FunctionsSideBar = getFunctionsSideBar()
@@ -45,8 +45,8 @@ const FunctionsSideBar = getFunctionsSideBar()
 export default defineConfig({
   base: '/vueuse-cn/',
   title: 'VueUse',
-  description: 'Collection of essential Vue Composition Utilities',
-  lang: 'en-US',
+  description: 'Vue 组合式实用函数合集',
+  // lang: 'en-US',
 
   markdown: {
     theme: {
@@ -81,32 +81,32 @@ export default defineConfig({
 
     nav: [
       {
-        text: 'Guide',
+        text: '指南',
         items: [
-          { text: 'Guide', items: Guide },
-          { text: 'Links', items: Links },
+          { text: '指南', items: Guide },
+          { text: '链接', items: Links },
         ],
       },
       {
-        text: 'Functions',
+        text: '函数',
         items: [
           {
             text: '',
             items: [
-              { text: 'All Functions', link: '/functions#' },
-              { text: 'Recent Updated', link: '/functions#sort=updated' },
+              { text: '所有函数', link: '/functions#' },
+              { text: '最近更新', link: '/functions#sort=updated' },
             ],
           },
-          { text: 'Core', items: CoreCategories },
-          { text: 'Add-ons', items: AddonCategories },
+          { text: '核心', items: CoreCategories },
+          { text: '附加组件', items: AddonCategories },
         ],
       },
       {
-        text: 'Add-ons',
+        text: '附加组件',
         link: '/add-ons',
       },
       {
-        text: 'Playground',
+        text: '演练场',
         link: 'https://play.vueuse.org',
       },
       {
@@ -114,11 +114,11 @@ export default defineConfig({
         items: [
           {
             items: [
-              { text: 'Release Notes', link: 'https://github.com/vueuse/vueuse/releases' },
+              { text: '发行说明', link: 'https://github.com/vueuse/vueuse/releases' },
             ],
           },
           {
-            text: 'Versions',
+            text: '版本',
             items: versions.map(i => i.version === currentVersion
               ? {
                   text: `${i.version} (Current)`,
