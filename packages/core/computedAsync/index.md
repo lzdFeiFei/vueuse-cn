@@ -7,7 +7,9 @@ alias: asyncComputed
 
 Computed for async functions
 
-## Usage
+异步函数的计算属性
+
+## Usage 用法
 
 ```js
 import { ref } from 'vue'
@@ -23,9 +25,11 @@ const userInfo = computedAsync(
 )
 ```
 
-### Evaluation State
+### Evaluation State 求值状态
 
 You will need to pass a ref to track if the async function is evaluating,
+
+需要传递一个 ref 来跟踪异步函数是否正在求值，
 
 ```js
 import { ref } from 'vue'
