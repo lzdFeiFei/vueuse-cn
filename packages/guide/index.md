@@ -1,10 +1,13 @@
-# Get Started
+# Get Started 开始
 
 VueUse is a collection of utility functions based on [Composition API](https://v3.vuejs.org/guide/composition-api-introduction.html). We assume you are already familiar with the basic ideas of [Composition API](https://v3.vuejs.org/guide/composition-api-introduction.html) before you continue.
 
-## Installation
+Vueuse 是一组基于 [Vue 组合式 API](https://v3.vuejs.org/guide/composition-api-introduction.html) 的实用函数合集。继续阅读之前我们假设你已经熟悉了  [Vue 组合式  API](https://v3.vuejs.org/guide/composition-api-introduction.html) 的基本概念。
+
+## Installation 安装
 
 > 🎩 From v4.0, it works for Vue 2 & 3 **within a single package** by the power of [vue-demi](https://github.com/vueuse/vue-demi)!
+> 🎩 从 4.0 版本开始，借助于  [vue-demi](https://github.com/vueuse/vue-demi) 的能力，可以在一个包里同时支持 Vue 2 & 3
 
 ```bash
 npm i @vueuse/core
@@ -13,6 +16,8 @@ npm i @vueuse/core
 [Add ons](/add-ons.html) | [Nuxt Module](/guide/index.html#nuxt)
 
 > From v6.0, VueUse requires `vue` >= v3.2 or `@vue/composition-api` >= v1.1
+> 
+> 从 6.0 版本开始， Vueuse 需要 `vue` >= v3.2 或 `@vue/composition-api` >= v1.1
 
 ###### Demos
 
@@ -31,9 +36,13 @@ npm i @vueuse/core
 
 It will be exposed to global as `window.VueUse`
 
+将以 `window.VueUse` 的方式暴露到全局环境
+
 ### Nuxt
 
 From v7.2.0, we shipped a Nuxt module to enable auto importing for Nuxt 3 and Nuxt Bridge.
+
+从 7.2.0 版本开始，我们发布了一个 Nuxt 模块以便 Nuxt 3 和 Nuxt Bridge 可以自动导入
 
 ```bash
 npm i -D @vueuse/nuxt @vueuse/core
@@ -61,6 +70,8 @@ export default {
 
 And then use VueUse function anywhere in your Nuxt app. For example:
 
+之后就可以在 Nuxt app 中随意使用 Vueuse 函数了。例如：
+
 ```html
 <script setup lang="ts">
 const { x, y } = useMouse()
@@ -71,9 +82,12 @@ const { x, y } = useMouse()
 </template>
 ```
 
-## Usage Example
+## Usage Example 使用示例
 
 Simply importing the functions you need from `@vueuse/core`
+
+只需从 `@vueuse/core` 中导入所需的函数
+
 
 ```ts
 import { useLocalStorage, useMouse, usePreferredDark } from '@vueuse/core'
@@ -101,3 +115,5 @@ export default {
 ```
 
 Refer to [functions list](/functions) for more details.
+
+参阅 [functions list](/functions) 获取更多细节。
