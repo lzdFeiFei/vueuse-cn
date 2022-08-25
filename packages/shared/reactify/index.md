@@ -7,15 +7,19 @@ alias: createReactiveFn
 
 Converts plain functions into reactive functions. The converted function accepts refs as its arguments and returns a ComputedRef, with proper typing.
 
+将普通函数转变成响应式函数。转换后的函数以 `refs` 作为参数，并返回一个 `ComputedRef`，并且有正确的类型推导。
+
 ::: tip
 Interested to see some application or looking for some pre-reactified functions? 
 
 Check out [⚗️ Vue Chemistry](https://github.com/antfu/vue-chemistry)!
 :::
 
-## Usage
+## Usage 使用方式
 
 Basic example
+
+基础示例
 
 ```ts
 import { reactify } from '@vueuse/core'
@@ -41,6 +45,8 @@ console.log(sum.value) // 7
 ```
 
 An example of implementing a reactive [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem).
+
+一个响应式[勾股定理](https://en.wikipedia.org/wiki/Pythagorean_theorem) 的示例。
 
 ```ts
 import { reactify } from '@vueuse/core'
@@ -77,6 +83,8 @@ console.log(c.value) // 5
 ```
 
 Another example of making reactive `stringify`
+
+另一个是 `stringify` 的示例。
 
 ```ts
 import { reactify } from '@vueuse/core'
