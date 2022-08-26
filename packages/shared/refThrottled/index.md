@@ -7,7 +7,9 @@ alias: useThrottle, throttledRef
 
 Throttle changing of a ref value.
 
-## Usage
+节流控制 ref 的变化。
+
+## Usage 使用
 
 ```js
 import { refThrottled } from '@vueuse/core'

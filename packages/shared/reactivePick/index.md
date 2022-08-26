@@ -6,6 +6,8 @@ category: Reactivity
 
 Reactively pick fields from a reactive object.
 
+响应式地从响应式对象中选择属性。
+
 ## Usage
 
 ```js
@@ -21,9 +23,9 @@ const obj = reactive({
 const picked = reactivePick(obj, 'x', 'elementX') // { x: number, elementX: number }
 ```
 
-### Scenarios
+### Scenarios 使用场景
 
-#### Selectively passing props to child
+#### Selectively passing props to child 选择性地给子组件传参
 
 ```html
 <script setup>

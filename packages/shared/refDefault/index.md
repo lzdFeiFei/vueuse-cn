@@ -6,6 +6,8 @@ category: Reactivity
 
 Apply default value to a ref.
 
+给 ref 设置默认值。
+
 ## Usage
 
 ```ts

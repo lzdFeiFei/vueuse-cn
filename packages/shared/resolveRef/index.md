@@ -7,6 +7,8 @@ related: resolveUnref
 
 Normalize value/ref/getter to `ref` or `computed`.
 
+将 `value/ref/getter` 规范化为 `ref` 或者 `computed`
+
 ## Usage
 
 ```ts

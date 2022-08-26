@@ -7,7 +7,9 @@ alias: useDebounce, debouncedRef
 
 Debounce execution of a ref value.
 
-## Usage
+具有防抖功能的 ref。
+
+## Usage 使用
 
 ```js {4}
 import { refDebounced } from '@vueuse/core'
@@ -23,6 +25,8 @@ await sleep(1100)
 console.log(debounced.value) // 'bar'
 ```
 You can also pass an optional 3rd parameter including maxWait option. See `useDebounceFn` for details.
+
+还可以传递包括 `maxWati` 选项在内的第三个可选在参数。详见 `useDebounceFn`。
 
 ## Recommended Reading
 

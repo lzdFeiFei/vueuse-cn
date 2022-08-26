@@ -6,6 +6,8 @@ category: Reactivity
 
 Apply `reactify` to an object
 
+将 `reactify` 用于对象
+
 ## Usage
 
 ```ts

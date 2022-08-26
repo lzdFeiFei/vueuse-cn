@@ -6,6 +6,8 @@ category: Reactivity
 
 Reactively omit fields from a reactive object.
 
+响应式地从响应式对象中删除属性。
+
 ## Usage
 
 ```js
@@ -21,9 +23,9 @@ const obj = reactive({
 const picked = reactiveOmit(obj, 'x', 'elementX') // { y: number, elementY: number }
 ```
 
-### Scenarios
+### Scenarios 使用场景
 
-#### Selectively passing props to child
+#### Selectively passing props to child 选择性地给子组件传参
 
 ```html
 <script setup>

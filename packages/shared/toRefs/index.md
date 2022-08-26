@@ -6,6 +6,8 @@ category: Reactivity
 
 Extended [`toRefs`](https://v3.vuejs.org/api/refs-api.html#torefs) that also accepts refs of an object.
 
+扩展 [`toRefs`](https://v3.vuejs.org/api/refs-api.html#torefs) 的功能，也能够接受对象 refs
+
 ## Usage
 
 <!-- eslint-disable array-bracket-spacing -->

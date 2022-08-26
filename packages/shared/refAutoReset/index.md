@@ -7,6 +7,9 @@ alias: autoResetRef
 
 A ref which will be reset to the default value after some time.
 
+一段时间后将重置为默认值的ref。
+
+
 ## Usage
 
 ```ts
